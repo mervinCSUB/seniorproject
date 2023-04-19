@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { useRouter } from 'expo-router';
 
+
 import styles from './SearchMap.styles';
 
 const SearchMap = () => {
@@ -20,7 +21,7 @@ const SearchMap = () => {
                 console.log(data, details);
             } }
             query={{
-                key: 'AIzaSyAhGHR4kYvIYP4KV-M2HFnz-iI1psRdPig',
+                key: 'RAPID_API_KEY',
                 language: 'en',
             }} />
         </View>      
