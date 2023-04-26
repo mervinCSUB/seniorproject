@@ -1,14 +1,15 @@
-# seniorproject
-PickUP
+# Expo Router Example
 
-To-Do List:
+Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
 
--Create select all to find location of users. 
+## 🚀 How to use
 
--Create a joint to find all users in specific areas, Bakersfield, parks.
+```sh
+npx create-react-native-app -t with-router
+```
 
--Search for basketball courts in certain area.
+## 📝 Notes
 
--Create a blog/media feed to set up meetups in a area.
-
--MapAPI for React
+- [Expo Router: Docs](https://expo.github.io/router)
+- [Expo Router: Repo](https://github.com/expo/router)
+- [Request for Comments](https://github.com/expo/router/discussions/1)
