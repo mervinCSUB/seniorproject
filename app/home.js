@@ -4,6 +4,7 @@ import { Stack, useRouter } from 'expo-router';
 import MapView from 'react-native-maps';
 import {COLORS, icons, SIZES } from '../constants';
 import { ScreenHeaderRightBtn, ScreenHeaderLeftBtn, ScreenHeader } from '../components';
+
 import { SearchMap } from '../components';
 import { useNavigation } from 'expo-router';
 
@@ -29,6 +30,7 @@ const Home = () => {
                 headerRight: () => (
                     <ScreenHeaderRightBtn iconUrl={icons.profile} dimension="100%" />
                 ),
+
                 }}
             /> 
             <SearchMap/>

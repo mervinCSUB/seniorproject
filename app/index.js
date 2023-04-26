@@ -12,6 +12,7 @@ import TestPage from './testpage';
 import ScreenHeader from '../components/common/header/ScreenHeaderRightBtn';
 import EditProfile from '../components/profile/header/EditProfile/EditProfile';
 import { Image } from 'react-native';
+
 const Stack = createNativeStackNavigator();
 
 const MainStack = () => {
@@ -42,6 +43,7 @@ const MainStack = () => {
       <Stack.Screen name="Messages" component={Messages} options={{headerTitle: () => (<Image 
         source={icons.header}  style={{width: 200, height: 40}}/>), 
       headerShadowVisible: false}} />
+
     </Stack.Navigator>
   );
 }

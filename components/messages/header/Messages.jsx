@@ -5,7 +5,6 @@ import { Stack, useRouter } from 'expo-router';
 import { useNavigation } from '@react-navigation/native';
 import ScreenHeaderLeftProfileBtn from '../../common/header/ScreenHeaderProfileLeftBtn';
 import { icons } from '../../../constants';
-
 import styles from './Messages.styles'
 
 const Messages = () => {
@@ -18,6 +17,7 @@ const Messages = () => {
             <ScreenHeaderLeftProfileBtn iconUrl={icons.left} dimension="90%" />
           ),
         }} />
+            <Text>Hello Messages</Text>
         </View>
     );
 }

@@ -15,6 +15,9 @@ const Actions = () => {
         <TouchableOpacity onPress={() => navigation.navigate('EditProfile')}>
           <Text style={styles.actionText}>Edit Profile</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => console.log('Edit Avatar')}>
+          <Text style={styles.actionText}>Edit Avatar</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.popToTop()}>
           <Text style={styles.actionText}>Log Out</Text>
         </TouchableOpacity>

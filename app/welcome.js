@@ -1,8 +1,8 @@
+
 import { SafeAreaView, View, Text, TouchableOpacity, StyleSheet, Switch, ImageBackground} from "react-native";
 import { useNavigation, useRouter } from "expo-router";
 import { COLORS, images, SIZES, FONT} from "../constants";
 import { useState } from "react";
-
 
 const Welcome = () => {
   const router = useRouter();
@@ -25,6 +25,22 @@ const Welcome = () => {
             </TouchableOpacity>
         </View>
       </ImageBackground>
+      <View style={styles.container}>
+        <View style={styles.container2}>
+          <Button
+          title="Login"
+          color={COLORS.white}
+          onPress={() => navigation.navigate('login')}
+        />
+        </View>
+        <View style={styles.container2}>
+          <Button
+          title="Sign Up"
+          color={COLORS.white}
+          onPress={() => navigation.navigate('signUp')}
+        />
+        </View>
+      </View>
     </SafeAreaView>
   ); 
 }
@@ -43,6 +59,20 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(52, 52, 52, 0.8)',
     width:'100%',
+    height: '100%',
+    height: "100%",
+  },
+  container: {
+    alignItems: 'center',
+    borderWidth: 5,
+    backgroundColor: 'black',
+    justifyContent: "center",
+    flex: 1,
+    marginTop: 16,
+    paddingTop: 10,
+    paddingVertical: 8,
+    borderWidth: 5,
+    borderRadius: 10,
     height: '100%',
   },
   container2: { 

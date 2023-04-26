@@ -69,6 +69,28 @@ container1: {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  container: {
+  padding: 4,
+  borderBottomColor: 'red',
+  borderBottomWidth: StyleSheet.hairlineWidth,
+  color: 'white',
+  width: 300,
+  marginTop: 20,
+  justifyContent: 'center',
+  alignItems: 'center',
+  },
+
+  picker: {
+      backgroundColor:'white',
+      color: 'white',
+      borderColor: 'red',
+      marginVertical: 30,
+      borderColor: 'white',
+      borderWidth: 1,
+      width: 300,
+      justifyContent: 'center',
+  },
+
   textPuts: {
       color: 'white',
       justifyContent: 'center',
