@@ -8,9 +8,18 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 120,
         height: 120,
-        borderRadius: 60,
+        borderRadius: 0,
         backgroundColor: '#ccc',
         marginBottom: 20,
     },
+    profilePicture: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 120,
+        height: 145,
+        borderRadius: 0,
+        backgroundColor: '#ccc',
+        marginBottom: 20,
+    }
 });
 export default styles;

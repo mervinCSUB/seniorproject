@@ -1,13 +1,23 @@
-import { View, Text, Button, TextInput, StyleSheet} from "react-native";
-import { Link, useNavigation, useRouter } from "expo-router";
+import { View, Text, Button, TextInput, StyleSheet, TouchableOpacity} from "react-native";
+import { Stack, useNavigation, useRouter } from "expo-router";
 import { Picker } from '@react-native-picker/picker';
 import { useState } from "react";
-import { COLORS } from "../constants";
-//import { StatusBar } from 'expo-status-bar';
+import { COLORS, SIZES, icons } from "../constants";
+import ScreenHeaderLoginProfileBtn from "../components/common/header/ScreenHeaderLoginBtn";
 
 const SignUp = () => {
     const router = useRouter();
     const navigation = useNavigation();
+    const [attibute, setAttribute] = useState('Defender');
+    return (
+        <View style={{backgroundColor: 'black', alignItems: 'center', height: '100%'}}>
+            <Stack.Screen options={{
+            headerStyle: { backgroundColor: 'white' },
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <ScreenHeaderLoginProfileBtn iconUrl={icons.left} dimension="90%" />
+            ),
+          }} />
     const [attibute, setAttribute] = useState('PlayMaker');
     return (
         <View style={{backgroundColor: 'black', alignItems: 'center', height: '100%'}}>
@@ -39,6 +49,16 @@ const SignUp = () => {
           style={styles.picker}
           selectedValue={attibute}
           onValueChange={currentAttribute => setAttribute(currentAttribute)}>
+          <Picker.Item label="Defender" value="Lock Down Defender" color={COLORS.primary} style={{width: "100%"}}/>
+          <Picker.Item label="Playmaker" value="Playmaker" color={COLORS.primary}/>
+          <Picker.Item label="Shooter" value="Shooter" color={COLORS.primary}/>
+        </Picker>
+        <Text style={{color: 'white', fontSize: 20, marginTop: 5}}>You Selected</Text>
+        <Text style={{color: COLORS.primary, fontSize: 20, marginBottom: 30}}>{attibute}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Home')}>           
+                        <Text style={{color: COLORS.primary, fontSize:SIZES.xLarge, marginTop: 40}}>Confirm Sign Up</Text>
+          </TouchableOpacity>
+
           <Picker.Item label="Defender" value="Lock Down Defender"/>
           <Picker.Item label="Playmaker" value="Playmaker" />
           <Picker.Item label="Shooter" value="Shooter" />
@@ -58,6 +78,18 @@ const SignUp = () => {
 
 const styles = StyleSheet.create({
     container: {
+    padding: 10,
+    color: 'white',
+    borderBottomColor: 'red',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    color: 'white',
+    width: 350,
+    marginTop: 20,
+    borderRadius: 10,
+    },
+    picker: {
+        marginTop: 0, 
+        backgroundColor:"black", 
     padding: 4,
     borderBottomColor: 'red',
     borderBottomWidth: StyleSheet.hairlineWidth,
@@ -84,6 +116,12 @@ const styles = StyleSheet.create({
         color: 'white',
         justifyContent: 'center',
         alignItems: 'center',
+        fontSize: 20,
+    },
+    buttonCont: {
+      marginTop: 10,
+    } 
+=======
     }
   });
 

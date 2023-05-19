@@ -12,7 +12,7 @@ const Actions = () => {
     
     return (
       <View style={styles.actionsContainer}>
-        <TouchableOpacity onPress={() => console.log('Edit profile')}>
+        <TouchableOpacity onPress={() => navigation.navigate('EditProfile')}>
           <Text style={styles.actionText}>Edit Profile</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => console.log('Edit Avatar')}>

@@ -7,11 +7,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         width: '100%',
+        margin: 0,
       },
       actionText: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#007AFF',
       },
 });
 export default styles;

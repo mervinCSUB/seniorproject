@@ -4,9 +4,9 @@ import { FONT, SIZES, COLORS  } from "../../../../constants";
 
 const styles = StyleSheet.create({
     actionsContainer: {
-        flexDirection: 'row',
         justifyContent: 'space-around',
         width: '100%',
+        color: 'white',
       },
       actionText: {
         fontSize: 18,
@@ -16,16 +16,18 @@ const styles = StyleSheet.create({
       userInfoContainer: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: 20,
+        marginBottom: 200,
       },
       nameText: {
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 10,
+        color: 'white',
       },
       bioText: {
         fontSize: 16,
         textAlign: 'center',
+        color: 'white',
       },
 });
 export default styles;

@@ -2,8 +2,6 @@ import React from 'react';
 import { View } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { useRouter } from 'expo-router';
-
-
 import styles from './SearchMap.styles';
 
 const SearchMap = () => {

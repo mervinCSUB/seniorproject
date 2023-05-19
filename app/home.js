@@ -3,7 +3,8 @@ import {View, ScrollView, SafeAreaView , StyleSheet, Button} from 'react-native'
 import { Stack, useRouter } from 'expo-router';
 import MapView from 'react-native-maps';
 import {COLORS, icons, SIZES } from '../constants';
-import { ScreenHeaderBtn, ScreenHeaderLeftBtn } from '../components';
+import { ScreenHeaderRightBtn, ScreenHeaderLeftBtn, ScreenHeader } from '../components';
+
 import { SearchMap } from '../components';
 import { useNavigation } from 'expo-router';
 
@@ -21,15 +22,15 @@ const Home = () => {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.primary}}>
             <Stack.Screen options={{
-                headerStyle: { backgroundColor: COLORS.primary },
+                headerStyle: { backgroundColor: 'white'},
                 headerShadowVisible: false,
                 headerLeft: () => (
-                    <ScreenHeaderLeftBtn iconUrl={icons.menu} dimension="90%"/>
+                    <ScreenHeaderLeftBtn iconUrl={icons.chat} dimension="90%"/>
                 ),
                 headerRight: () => (
-                    <ScreenHeaderBtn iconUrl={icons.profile} dimension="100%" />
+                    <ScreenHeaderRightBtn iconUrl={icons.profile} dimension="100%" />
                 ),
-                headerTitle: "PICK UP"
+
                 }}
             /> 
             <SearchMap/>

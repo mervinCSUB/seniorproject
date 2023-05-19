@@ -11,8 +11,9 @@ const UserInfo = () => {
   const navigation = useNavigation();
     return (
       <View style={styles.userInfoContainer}>
-        <Text style={styles.nameText}>John Smith</Text>
-        <Text style={styles.bioText}>Lorem ipsum dolor sit amet.</Text>
+        <Text style={styles.nameText}>Minion_Hooper</Text>
+        <Text style={styles.bioText}>LockDown Defender</Text>
+        <Text style={styles.bioText}></Text>
       </View>
     );
   };
