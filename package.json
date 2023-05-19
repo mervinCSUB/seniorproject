@@ -6,11 +6,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-picker/picker": "2.4.8",
-    "@react-navigation/native": "^6.1.6",
-    "@react-navigation/native-stack": "^6.9.12",
-    "@react-navigation/stack": "^6.3.16",
-    "axios": "^1.3.5",
+    "@react-native-picker/picker": "^2.4.10",
+    "axios": "^1.4.0",
     "expo": "^48.0.7",
     "expo-constants": "~14.2.1",
     "expo-font": "^11.1.1",
@@ -18,18 +15,14 @@
     "expo-router": "^1.2.0",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.2",
-    "hex-to-rgba": "^2.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-google-places-autocomplete": "^3.4.0",
-    "react-native": "0.71.6",
-    "react-native-custom-switch": "^1.0.7",
+    "react-native": "0.71.3",
     "react-native-dotenv": "^3.4.8",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-google-places-autocomplete": "^2.5.1",
-    "react-native-linear-gradient": "^2.6.2",
-    "react-native-maps": "1.3.2",
+    "react-native-maps": "^1.7.1",
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0",
@@ -47,7 +40,7 @@
     "metro": "^0.73.7",
     "metro-resolver": "^0.73.7"
   },
-  "name": "senior_project_form",
+  "name": "pick_up_final",
   "version": "1.0.0",
   "private": true
 }

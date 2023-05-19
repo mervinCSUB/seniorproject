@@ -1,0 +1,40 @@
+import { StyleSheet } from "react-native";
+import { COLORS, FONT, icons, images, SIZES } from "../../../constants";
+
+const styles = StyleSheet.create({
+    screen: {
+            flex: 1,
+        },
+    container1: {
+        flex: 1,
+        alignItems: 'center',
+         borderWidth: 5,
+        backgroundColor: 'rgba(52, 52, 52, 0.8)',
+        justifyContent: "center",
+        paddingTop: 10,
+        paddingVertical: 8,
+        borderWidth: 3,
+        borderColor: 'rgba(52, 52, 52, 0.8)',
+        width:'100%',
+        height: '100%',
+        },
+      container2: {
+        padding: 4,
+        borderBottomColor: COLORS.primary,
+        borderBottomWidth: 3,
+        color: COLORS.primaryText,
+        width: 300,
+        marginTop: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+      textPuts: {
+          color: COLORS.primaryText,
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: 20,
+          width: 300,
+      }
+});
+
+export default styles; 
